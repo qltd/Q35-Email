@@ -10,7 +10,6 @@
         GLOBAL
         ------------------------------------- */
         * {
-        font-family: Avenir, Arial, sans-serif;
         margin: 0;
         padding: 0;
         }
@@ -30,8 +29,7 @@
         ------------------------------------- */
         h1,
         h2,
-        h3,
-        h1 a, h1 span {
+        h3 {
         color: #00274c;
         font-family: Avenir, Arial, sans-serif;
         font-weight: 800;
@@ -42,7 +40,7 @@
         }
         h2 {
         font-size: 18px;
-        margin: 0 0 10px;
+        margin: 20px 0 0;
         }
         h3 {
         font-size: 18px;
@@ -51,8 +49,9 @@
         }
         a {
         text-decoration: underline;
-        color: #407cca;
+        color: #ad4aa2;
         font-weight: 800;
+        font-family: Georgia, serif;
         }
         p,
         ul,
@@ -74,6 +73,12 @@
         margin-bottom: 10px;
         }
 
+        .img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+        }
+
         /* -------------------------------------
         HEADER
         ------------------------------------- */
@@ -81,6 +86,11 @@
         clear: both !important;
         width: 100%;
         text-align: center;
+        }
+        table.header-wrap p, table.header-wrap a, table.header-wrap h2, table.header-wrap h2 * {
+        color: #ffffff;
+        font-family: Georgia, serif;
+        font-style: italic;
         }
         /* -------------------------------------
         CONTENT
@@ -91,7 +101,8 @@
         }
 
         table.body-wrap a {
-        color: #666;
+        color: #ad4aa2;
+        margin-bottom: 5px;
         }
 
         table.body-wrap em strong {
@@ -153,14 +164,19 @@
         <table class="header-wrap" bgcolor="#f5f6f7">
             <tr>
                 <td>
-                    <img src="logo.jpg" alt="Qltd" class="img" width="600" />
+                    <img src="logo.jpg" alt="Qltd" class="img" />
                 </td>
             </tr>
         </table>
         <table class="header-wrap" bgcolor="#ea8164">
             <tr>
                 <td>
-                    <img src="youre-invited.jpg" width="600" class="img" />
+                    <div class="content">
+                        <h2><singleline label="Invite Header">You're Invited!</singleline></h2>
+                        <p><multiline label="Invite Info">
+                            Join us in celebrating 35 years of creative breakthrough in design, development, and branding. <a href="http://q35.qltd.com">See our journey since 1981</a>, the same year that Raiders of the Lost Ark and Post-in notes emerged.</multiline>
+                        </p><br />
+                    </div>
                 </td>
             </tr>
         </table>
@@ -173,7 +189,7 @@
                         <table>
                             <tr>
                                 <td>
-                                    <img src="glass-icon.jpg" class="img" width="157" />
+                                    <img src="glass-icon.jpg" width="157" />
 
                                     <p>
                                         <multiline label="Location"><strong>Open house @ Q</strong><br />
@@ -190,11 +206,12 @@
                         <table>
                             <tr>
                                 <td>
-                                    <img src="rsvp-icon.jpg" class="img" width="217" />
-
+                                    <img src="rsvp-icon-only.jpg"  width="84" /><br />
                                     <p>
-                                        <multiline label="Location">Please RSVP by</strong><br />
-                                        Thursday, October 20th
+                                        <multiline label="RSVP">
+                                        <a href="mailto:info@qltd.com?subject=You're Invited! 35th Anniversary Open House">Let us know you're coming</a><br />
+                                        Please RSVP by<br />
+                                        Thursday, October 27th
                                         </multiline>
                                     </p>
                                 </td>
@@ -208,7 +225,7 @@
         <table class="header-wrap" bgcolor="#dcefea">
             <tr>
                 <td>
-                    <img src="food-drink.jpg" alt="Food - Drink DJ - Virtual Reality Room" class="img" width="600" />
+                    <img src="food-drink.jpg" alt="Food - Drink DJ - Virtual Reality Room" class="img" />
                 </td>
             </tr>
         </table>
@@ -222,22 +239,12 @@
                         <table>
                             <tr>
                                 <td>
-                                        <img src="footer-logo.jpg" width="133" />
-                                </td>
-
-                                <td>
-                                    <a href="#"><img src="facebook.jpg" height="18" /></a>
-                                    <a href="#"><img src="google-plus.jpg" height="18" /></a>
-                                    <a href="#"><img src="twitter.jpg" height="18" /></a>
-                                    <a href="#"><img src="flickr.jpg" height="18" /></a>
-                                    <a href="#"><img src="instagram.jpg" height="18" /></a>
-                                    <a href="#"><img src="linkedin.jpg" height="18" /></a>
+                                    <img src="footer-logo-large.jpg" width="301" />
                                 </td>
                             </tr>
-
                             <tr>
                                 <td>
-                                <br /><br /><br /><br />
+                                    <br /><br /><br /><br />
                                     <p>
                                         <unsubscribe>Unsubscribe</unsubscribe> &nbsp;|&nbsp;
                                         <forwardtoafriend>Forward to a friend</forwardtoafriend> &nbsp;|&nbsp;
